@@ -1,0 +1,38 @@
+{
+  "name": "heroku-slugify",
+  "version": "1.0.0",
+  "description": "Create a source tarball, upload it, build a slug and deploy it on Heroku.",
+  "bin": "./cli.js",
+  "scripts": {
+    "standardjs": "standard",
+    "standardjs-format": "standard-format -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keimlink/heroku-slugify.git"
+  },
+  "keywords": [
+    "heroku",
+    "slug",
+    "build",
+    "deploy",
+    "source",
+    "tar"
+  ],
+  "author": "Markus Zapke-Gründemann",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/keimlink/heroku-slugify/issues"
+  },
+  "homepage": "https://github.com/keimlink/heroku-slugify#readme",
+  "devDependencies": {
+    "standard": "^6.0.8",
+    "standard-format": "^2.1.1"
+  },
+  "dependencies": {
+    "argparse": "^1.0.7",
+    "console-stamp": "^0.2.0",
+    "heroku-client": "^2.4.1"
+  }
+}
