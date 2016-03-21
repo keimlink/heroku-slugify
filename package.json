@@ -1,6 +1,6 @@
 {
   "name": "heroku-slugify",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Create a source tarball, upload it, build a slug and deploy it on Heroku.",
   "bin": "./cli.js",
   "scripts": {
