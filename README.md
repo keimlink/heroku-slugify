@@ -3,6 +3,8 @@
 [![Travis](https://img.shields.io/travis/rust-lang/heroku-slugify.svg)](https://travis-ci.org/keimlink/heroku-slugify)
 [![npm](https://img.shields.io/npm/v/heroku-slugify.svg)](https://www.npmjs.com/package/heroku-slugify)
 [![npm](https://img.shields.io/npm/l/heroku-slugify.svg)](https://www.npmjs.com/package/heroku-slugify)
+[![Dependencies](https://david-dm.org/keimlink/heroku-slugify.svg)](https://david-dm.org/keimlink/heroku-slugify)
+[![DevDependencies](https://david-dm.org/keimlink/heroku-slugify/dev-status.svg)](https://david-dm.org/keimlink/heroku-slugify#info=devDependencies)
 [![standardjs](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 
 A command line tool to deploy your application to Heroku without
