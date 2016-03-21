@@ -1,11 +1,11 @@
 # Heroku Slugify
 
-[![Travis](https://img.shields.io/travis/rust-lang/heroku-slugify.svg)](https://travis-ci.org/keimlink/heroku-slugify)
-[![npm](https://img.shields.io/npm/v/heroku-slugify.svg)](https://www.npmjs.com/package/heroku-slugify)
-[![npm](https://img.shields.io/npm/l/heroku-slugify.svg)](https://www.npmjs.com/package/heroku-slugify)
-[![Dependencies](https://david-dm.org/keimlink/heroku-slugify.svg)](https://david-dm.org/keimlink/heroku-slugify)
-[![DevDependencies](https://david-dm.org/keimlink/heroku-slugify/dev-status.svg)](https://david-dm.org/keimlink/heroku-slugify#info=devDependencies)
-[![standardjs](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
+[![Build Status](https://img.shields.io/travis/keimlink/heroku-slugify.svg?style=flat-square)](https://travis-ci.org/keimlink/heroku-slugify)
+[![npm version](https://img.shields.io/npm/v/heroku-slugify.svg?style=flat-square)](https://www.npmjs.com/package/heroku-slugify)
+[![License](https://img.shields.io/npm/l/heroku-slugify.svg?style=flat-square)](https://www.npmjs.com/package/heroku-slugify)
+[![Dependencies Status](https://img.shields.io/david/keimlink/heroku-slugify.svg?style=flat-square)](https://david-dm.org/keimlink/heroku-slugify)
+[![DevDependencies Status](https://img.shields.io/david/dev/keimlink/heroku-slugify.svg?style=flat-square)](https://david-dm.org/keimlink/heroku-slugify#info=devDependencies)
+[![standardjs](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square)](http://standardjs.com/)
 
 A command line tool to deploy your application to Heroku without
 using `git push`. It creates a source tarball, uploads it, builds a slug and
