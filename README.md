@@ -28,6 +28,9 @@ Usage
       -a APP, --app APP     Heroku app id
       -v VERSION, --version VERSION
                             Version to deploy
+      -d DIRECTORY, --directory DIRECTORY
+                            Name of the directory containing the files for the
+                            tarball (default: heroku)
       -s SOURCE, --source SOURCE
                             File name of source tarball (default: source.tar.gz)
       -t TIMEOUT, --timeout TIMEOUT

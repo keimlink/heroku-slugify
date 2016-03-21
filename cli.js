@@ -32,10 +32,10 @@ function exec (command) {
   })
 }
 
-function createSourceTarball (source) {
+function createSourceTarball (source, directory) {
   return exec(util.format('rm -f %s', source))
   .then(function () {
-    return exec(util.format('tar czvf %s -C heroku/ $(ls heroku/)', source))
+    return exec(util.format('tar czvf %s -C %s/ $(ls %s/)', source, directory, directory))
     .then(function () {
       return Q.nfbind(fs.stat)(source)
     })
@@ -76,11 +76,11 @@ function waitForBuild (app, build_id, timeout, interval) {
   })
 }
 
-function slugify (app_id, version, source_file, timeout, interval) {
+function slugify (app_id, version, directory, source_file, timeout, interval) {
   var heroku = new Heroku({token: process.env.HEROKU_API_TOKEN})
   var app = heroku.apps(app_id)
   displayInfo(app_id, version, source_file, timeout, interval)
-  return createSourceTarball(source_file)
+  return createSourceTarball(source_file, directory)
   .then(function () {
     return app.sources().create()
   })
@@ -124,6 +124,13 @@ function main () {
     }
   )
   parser.addArgument(
+    [ '-d', '--directory' ],
+    {
+      defaultValue: 'heroku',
+      help: 'Name of the directory containing the files for the tarball (default: heroku)'
+    }
+  )
+  parser.addArgument(
     [ '-s', '--source' ],
     {
       defaultValue: 'source.tar.gz',
@@ -147,7 +154,7 @@ function main () {
     }
   )
   var args = parser.parseArgs()
-  return slugify(args.app, args.version, args.source, args.timeout, args.interval)
+  return slugify(args.app, args.version, args.directory, args.source, args.timeout, args.interval)
 }
 
 main()
