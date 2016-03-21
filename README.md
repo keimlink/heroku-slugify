@@ -5,10 +5,10 @@
 [![npm](https://img.shields.io/npm/l/heroku-slugify.svg)](https://www.npmjs.com/package/heroku-slugify)
 [![standardjs](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 
-A command line tool to create a source tarball, upload it, build a slug and
-deploy it on Heroku. The Heroku Dev Center article [Building and Releasing
-Using the Platform API](https://devcenter.heroku.com/articles/build-and-release-using-the-api)
-explains the details.
+A command line tool to deploy your application to Heroku without
+using `git push`. It creates a source tarball, uploads it, builds a slug and
+deploys it on Heroku. The Heroku Dev Center article
+[Building and Releasing Using the Platform API](https://devcenter.heroku.com/articles/build-and-release-using-the-api) explains the details.
 
 ## Installation
 
@@ -50,8 +50,12 @@ variable, otherwise authentication will fail.
 ## Example: Deploying Jupyter Notebook on Heroku
 
 A simple example is to deploy a [Jupyter Notebook](http://jupyter.readthedocs.org/)
-on a Heroku Dyno. The following steps show you how to do this. You just need a
-[Heroku account](https://signup.heroku.com/) to do it!
+on a Heroku Dyno. Instead of creating a Git repository and pushing it to the
+`heroku` remote we just create three configuration files and deploy them using
+`heroku-slugify`.
+
+The following steps show you how to do this. You just need a
+[Heroku account](https://signup.heroku.com/) to start!
 
 By default `heroku-slugify` will collect all files in the directory `heroku` to
 create the source tarball that contains the Heroku slug configuration. So your
@@ -81,6 +85,8 @@ Now you should have a `heroku` directory with three files in it:
     └── runtime.txt
 
     0 directories, 3 files
+
+That's all you need to deploy your Heroku Dyno!
 
 If you don't have a Heroku app you can use for testing, create one now:
 
