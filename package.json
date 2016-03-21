@@ -33,6 +33,6 @@
   "dependencies": {
     "argparse": "^1.0.7",
     "console-stamp": "^0.2.0",
-    "heroku-client": "^2.4.1"
+    "heroku-client": "^2.4.2"
   }
 }
