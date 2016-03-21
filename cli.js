@@ -77,7 +77,7 @@ function waitForBuild (app, build_id, timeout, interval) {
 }
 
 function slugify (app_id, version, directory, source_file, timeout, interval) {
-  var heroku = new Heroku({token: process.env.HEROKU_API_TOKEN})
+  var heroku = new Heroku({token: process.env.HEROKU_API_KEY})
   var app = heroku.apps(app_id)
   displayInfo(app_id, version, source_file, timeout, interval)
   return createSourceTarball(source_file, directory)
