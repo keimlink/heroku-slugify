@@ -146,6 +146,10 @@ That's it! `heroku-slugify` makes it as simply as possible to deploy your
 packaged application to a Heroku Dyno. You can not only deploy Python packages,
 but any package format a Heroku buildpack exists for.
 
+In case you want to destroy your Heroku Dyno, run the following command:
+
+    $ heroku apps:destroy --app <YOUR_HEROKU_APP_ID_HERE>
+
 ## SECURITY ADVICE
 
 Please note that anyone who has the URL of your Heroku Dyno has full access to
