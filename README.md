@@ -14,7 +14,7 @@ deploys it on Heroku. The Heroku Dev Center article
 
 ## Installation
 
-    $ npm install heroku-slugify --save
+    $ npm install heroku-slugify --global
 
 ## Configuration
 
