@@ -4,6 +4,7 @@
   "description": "A command line tool to deploy your application to Heroku without using git push.",
   "bin": "./cli.js",
   "scripts": {
+    "preversion": "npm test",
     "standardjs": "standard",
     "standardjs-format": "standard-format -w",
     "test": "npm run standardjs && node cli.js --help"
