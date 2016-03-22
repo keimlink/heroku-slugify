@@ -6,7 +6,7 @@
   "scripts": {
     "standardjs": "standard",
     "standardjs-format": "standard-format -w",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run standardjs && node cli.js --help"
   },
   "repository": {
     "type": "git",
