@@ -1,7 +1,7 @@
 {
   "name": "heroku-slugify",
   "version": "1.0.1",
-  "description": "Create a source tarball, upload it, build a slug and deploy it on Heroku.",
+  "description": "A command line tool to deploy your application to Heroku without using git push.",
   "bin": "./cli.js",
   "scripts": {
     "standardjs": "standard",
