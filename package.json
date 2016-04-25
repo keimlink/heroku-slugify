@@ -7,7 +7,8 @@
     "preversion": "npm test",
     "standardjs": "standard",
     "standardjs-format": "standard-format -w",
-    "test": "npm run standardjs && node cli.js --help"
+    "pretest": "npm run standardjs",
+    "test": "node cli.js --help"
   },
   "repository": {
     "type": "git",
