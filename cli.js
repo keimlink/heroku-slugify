@@ -43,7 +43,7 @@ function createSourceTarball (source, directory) {
 }
 
 function uploadSourceTarball (url, source) {
-  return exec(util.format('curl "%s" -X PUT -H "Content-Type:" --data-binary @%s', url, source))
+  return exec(util.format('curl --progress-bar "%s" -X PUT -H "Content-Type:" --data-binary @%s', url, source))
 }
 
 function createBuild (app, url, version) {
