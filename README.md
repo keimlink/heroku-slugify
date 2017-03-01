@@ -1,5 +1,7 @@
 # Heroku Slugify
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/keimlink/heroku-slugify.svg)](https://greenkeeper.io/)
+
 [![Build Status](https://img.shields.io/travis/keimlink/heroku-slugify.svg?style=flat-square)](https://travis-ci.org/keimlink/heroku-slugify)
 [![npm version](https://img.shields.io/npm/v/heroku-slugify.svg?style=flat-square)](https://www.npmjs.com/package/heroku-slugify)
 [![License](https://img.shields.io/npm/l/heroku-slugify.svg?style=flat-square)](https://www.npmjs.com/package/heroku-slugify)
