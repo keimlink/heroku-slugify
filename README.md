@@ -3,8 +3,8 @@
 [![Build Status](https://img.shields.io/travis/keimlink/heroku-slugify.svg?style=flat-square)](https://travis-ci.org/keimlink/heroku-slugify)
 [![npm version](https://img.shields.io/npm/v/heroku-slugify.svg?style=flat-square)](https://www.npmjs.com/package/heroku-slugify)
 [![License](https://img.shields.io/npm/l/heroku-slugify.svg?style=flat-square)](https://www.npmjs.com/package/heroku-slugify)
-[![Dependencies Status](https://img.shields.io/david/keimlink/heroku-slugify.svg?style=flat-square)](https://david-dm.org/keimlink/heroku-slugify)
-[![DevDependencies Status](https://img.shields.io/david/dev/keimlink/heroku-slugify.svg?style=flat-square)](https://david-dm.org/keimlink/heroku-slugify#info=devDependencies)
+[![bitHound](https://img.shields.io/bithound/dependencies/github/keimlink/heroku-slugify.svg?style=flat-square)](https://www.bithound.io/github/keimlink/heroku-slugify/master/dependencies/npm)
+[![bitHound](https://img.shields.io/bithound/devDependencies/github/keimlink/heroku-slugify.svg?style=flat-square)](https://www.bithound.io/github/keimlink/heroku-slugify/master/dependencies/npm)
 [![standardjs](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square)](http://standardjs.com/)
 
 A command line tool to deploy your application to Heroku without
